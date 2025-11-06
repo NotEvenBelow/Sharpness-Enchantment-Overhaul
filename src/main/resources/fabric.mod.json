@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "sharpness_enchantment_overhaul",
+  "version": "1.0",
+  "name": "Sharpness Enchantment Overhaul",
+  "description": "Overhauls Sharpness to be more balanced and adds more features for Sharpness, Smite, and Bane of Arthropods.",
+  "authors": ["NotEvenBelow"],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/sharpness-enchantment-overhaul",
+    "issues": "https://github.com/NotEvenBelow/sharpness-enchantment-overhaul/issues"
+  },
+  "license": "LGPL-3.0-only",
+  "icon": "icon.png",
+  "environment": "*",
+
+  "entrypoints": {
+    "main": [
+      "Sharpness_Enchantment_Overhaul.sharpness_enchantment_overhaul.Sharpness_enchantment_overhaul"
+    ],
+    "fabric-datagen": [
+      "Sharpness_Enchantment_Overhaul.sharpness_enchantment_overhaul.client.Sharpness_enchantment_overhaulDataGenerator"
+    ]
+  },
+
+  "mixins": [
+    "sharpness_enchantment_overhaul.mixins.json",
+    {
+      "config": "sharpness_enchantment_overhaul.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+
+  "depends": {
+    "java": ">=17",
+    "fabricloader": ">=0.16.4",
+    "minecraft": "1.20.1",
+    "fabric": "*"
+  }
+}

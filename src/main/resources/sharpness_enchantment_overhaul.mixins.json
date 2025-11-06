@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "Sharpness_Enchantment_Overhaul.sharpness_enchantment_overhaul.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "SharpnessScaleMixin",
+    "EqualizeDamageWeightsMixin",
+    "CaptureAttackTargetMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
